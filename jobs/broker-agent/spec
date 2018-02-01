@@ -19,6 +19,7 @@ provides:
   - port
   - username
   - password
+  - version
 
 consumes:
 - name: blueprint_service
@@ -28,6 +29,9 @@ properties:
   port:
     description: Port of Agent API.
     default: 2718
+  version:
+    description: Version of Agent API.
+    default: "1"
   username:
     description: Username of the Agent.
     default: admin
